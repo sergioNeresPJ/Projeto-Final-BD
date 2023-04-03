@@ -1,7 +1,7 @@
 CREATE FUNCTION verifica_data_func()
 RETURNS TRIGGER AS $$
 BEGIN
-	IF(new.data_contrato < CURRENT_DATE) THEN
+	IF(new.data_contrato > CURRENT_DATE) THEN
 		RAISE EXCEPTION 'Data Invalida pois é posterior a data atual';
 	END IF;
 	RETURN NEW;
@@ -17,7 +17,7 @@ EXECUTE PROCEDURE verifica_data_func();
 CREATE FUNCTION verifica_data_compra()
 RETURNS TRIGGER AS $$
 BEGIN
-	IF(new.data_compra < CURRENT_DATE) THEN
+	IF(new.data_compra > CURRENT_DATE) THEN
 		RAISE EXCEPTION 'Data Invalida pois é posterior a data atual';
 	END IF;
 	RETURN NEW;
