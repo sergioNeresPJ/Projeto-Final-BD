@@ -7,7 +7,7 @@ CREATE TABLE funcionario(
 
 CREATE TABLE pedido(
     id serial primary key,
-    total double precision check (total>0) not null,
+    total double precision check (total>=0) default 0,
     forma_pgto varchar(15) check (forma_pgto in ('dinheiro', 'pix', 'cartao')) not null
 );
 
@@ -53,11 +53,11 @@ CREATE TABLE ingrediente(
     quantidade int not null
 );
 
-CREATE TABLE igrediente_prato(
+CREATE TABLE ingrediente_prato(
     nome_item varchar(50) references item_cardapio(nome) not null,
-    nome_igrediente varchar(50) references ingrediente(nome) not null,
+    nome_ingrediente varchar(50) references ingrediente(nome) not null,
     quantidade int not null,
     unidade_medida varchar(10) not null,
     
-    constraint pk_ingredprato primary key (nome_item, nome_igrediente) 
+    constraint pk_ingredprato primary key (nome_item, nome_ingrediente) 
 );
