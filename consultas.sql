@@ -14,6 +14,8 @@ SELECT avg(preco) AS "media de preco das entradas" FROM item_cardapio
 INNER JOIN prato ON nome = nome_item WHERE tipo_prato = 'entrada';
 
 -- Consulta 5
-
+SELECT nome_ingrediente, count(*) quant FROM ingrediente_prato
+GROUP BY nome_ingrediente
+LIMIT 1;
 
 -- Consulta 6

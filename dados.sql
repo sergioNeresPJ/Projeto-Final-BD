@@ -219,61 +219,61 @@ INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_m
 VALUES ('Beringela com molho tahine', 'Beringela', 4, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Beringela com molho tahine', 'Molho tahine', 200, 'ml');
+VALUES ('Beringela com molho tahine', 'Molho tahine', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Frango empanado', 'Frango', 5, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Frango empanado', 'Farinha', 200, 'g');
+VALUES ('Frango empanado', 'Farinha', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Frango empanado', 'Ovo', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Escondidinho de camarao', 'Camarao', 200, 'g');
+VALUES ('Escondidinho de camarao', 'Camarao', 30, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Escondidinho de camarao', 'Queijo parmesao', 320, 'g');
+VALUES ('Escondidinho de camarao', 'Queijo parmesao', 3, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Escondidinho de camarao', 'Mandioca', 400, 'g');
+VALUES ('Escondidinho de camarao', 'Mandioca', 5, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Risoto com queijo brie', 'Arroz', 200, 'g');
+VALUES ('Risoto com queijo brie', 'Arroz', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Risoto com queijo brie', 'Queijo brie', 150, 'g');
+VALUES ('Risoto com queijo brie', 'Queijo brie', 4, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Veggie cheeseburger', 'Pao', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Veggie cheeseburger', 'Queijo vegano', 100, 'g');
+VALUES ('Veggie cheeseburger', 'Queijo vegano', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Veggie cheeseburger', 'Hamburguer vegano', 160, 'g');
+VALUES ('Veggie cheeseburger', 'Hamburguer vegano', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Pudim de leite condensado', 'Leite Condensado', 375, 'g');
+VALUES ('Pudim de leite condensado', 'Leite Condensado', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Pudim de leite condensado', 'Acucar', 45, 'g');
+VALUES ('Pudim de leite condensado', 'Acucar', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Pudim de leite condensado', 'Ovo', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Pudim de leite condensado', 'Leite', 400, 'ml');
+VALUES ('Pudim de leite condensado', 'Leite', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Merengue de morango', 'Leite', 500, 'ml');
+VALUES ('Merengue de morango', 'Leite', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Merengue de morango', 'Suspiro', 15, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Merengue de morango', 'Acucar', 35, 'g');
+VALUES ('Merengue de morango', 'Acucar', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Merengue de morango', 'Morango', 200, 'g');
+VALUES ('Merengue de morango', 'Morango', 10, 'un');
