@@ -33,7 +33,12 @@ INNER JOIN pedido ON id = id_pedido
 WHERE total = (SELECT max(total) FROM pedido)
 
 -- Consulta 6
-SELECT tipo_prato, count(*) quant FROM pedido_item NATURAL JOIN prato
+SELECT tipo_prato FROM pedido_item
+NATURAL JOIN prato 
 GROUP BY tipo_prato
-ORDER BY quant DESC
-LIMIT 1;
+HAVING COUNT(*) = (
+	SELECT MAX(qtd) FROM (
+		SELECT count(*) qtd FROM pedido_item 
+		NATURAL JOIN prato
+		GROUP BY tipo_prato
+) as QTD_TIPOS);

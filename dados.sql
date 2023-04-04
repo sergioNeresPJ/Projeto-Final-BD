@@ -14,6 +14,41 @@ VALUES ('53936763011', 'Leonardo Rodrigues', 1500.97, '2023-01-30');
 INSERT INTO funcionario(cpf, nome, salario, data_contrato)
 VALUES ('46757106035', 'Carlos Alberto', 2500, '2023-01-30');
 
+-- Insercao na tabela item_cardapio
+-- Entradas
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Beringela com molho tahine', TRUE, 29.00);
+
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Frango empanado', TRUE, 35.90);
+
+-- Pratos principais
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Escondidinho de camarao', TRUE, 69.90);
+
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Risoto com queijo brie', TRUE, 59.90);
+
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Veggie cheeseburger', TRUE, 38.50);
+
+-- Sobremesas
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Pudim de leite condensado', TRUE, 32.90);
+
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Merengue de morango', TRUE, 25.00);
+
+-- Bebidas
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Coca cola', TRUE, 6.00);
+
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Cerveja', TRUE, 8.70);
+
+INSERT INTO item_cardapio(nome, ativo, preco)
+VALUES ('Suco de laranja', FALSE, 6.00);
+
 -- Insercao prato
 INSERT INTO prato(nome_item, tipo_prato)
 VALUES ('Beringela com molho tahine', 'entrada');
@@ -163,42 +198,6 @@ VALUES ('Merengue de morango', 'Acucar', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Merengue de morango', 'Morango', 10, 'un');
-
--- Insercao na tabela item_cardapio
--- Entradas
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Beringela com molho tahine', TRUE, 29.00);
-
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Frango empanado', TRUE, 35.90);
-
--- Pratos principais
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Escondidinho de camarao', TRUE, 69.90);
-
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Risoto com queijo brie', TRUE, 59.90);
-
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Veggie cheeseburger', TRUE, 38.50);
-
--- Sobremesas
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Pudim de leite condensado', TRUE, 32.90);
-
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Merengue de morango', TRUE, 25.00);
-
--- Bebidas
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Coca cola', TRUE, 6.00);
-
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Cerveja', TRUE, 8.70);
-
-INSERT INTO item_cardapio(nome, ativo, preco)
-VALUES ('Suco de laranja', FALSE, 6.00);
-
 
 -- Insercao na tabela pedido
 INSERT INTO pedido(forma_pgto)
