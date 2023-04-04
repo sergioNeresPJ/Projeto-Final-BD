@@ -19,13 +19,8 @@ INSERT INTO funcionario(cpf, nome, salario, data_contrato)
 VALUES ('46757106035', 'Carlos Alberto', 2500, '2023-01-30');
 
 -- Insercao na tabela pedido
-<<<<<<< HEAD:inserts.sql
 INSERT INTO pedido(forma_pgto)
 VALUES ('pix');
-=======
-INSERT INTO pedido(total, forma_pgto)
-VALUES (44.50, 'pix');
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:dados.sql
 
 INSERT INTO pedido(forma_pgto)
 VALUES ('cartao');
@@ -36,13 +31,8 @@ VALUES ('dinheiro');
 INSERT INTO pedido(forma_pgto)
 VALUES ('pix');
 
-<<<<<<< HEAD:inserts.sql
 INSERT INTO pedido(forma_pgto)
 VALUES ('cartao');
-=======
-INSERT INTO pedido(total, forma_pgto)
-VALUES (101.50, 'cartao');
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:dados.sql
 
 -- Insercao na tabela prepara_pedido
 
@@ -232,41 +222,18 @@ INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_m
 VALUES ('Beringela com molho tahine', 'Beringela', 4, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-<<<<<<< HEAD:inserts.sql
-VALUES ('Beringela com molho tahine', 'Molho tahine', 200, 'ml');
-=======
 VALUES ('Beringela com molho tahine', 'Molho tahine', 2, 'un');
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:dados.sql
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Frango empanado', 'Frango', 5, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-<<<<<<< HEAD:inserts.sql
-VALUES ('Frango empanado', 'Farinha', 200, 'g');
-=======
 VALUES ('Frango empanado', 'Farinha', 2, 'un');
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:dados.sql
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Frango empanado', 'Ovo', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-<<<<<<< HEAD:inserts.sql
-VALUES ('Escondidinho de camarao', 'Camarao', 200, 'g');
-
-INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Escondidinho de camarao', 'Queijo parmesao', 320, 'g');
-
-INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Escondidinho de camarao', 'Mandioca', 400, 'g');
-
-INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Risoto com queijo brie', 'Arroz', 200, 'g');
-
-INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Risoto com queijo brie', 'Queijo brie', 150, 'g');
-=======
 VALUES ('Escondidinho de camarao', 'Camarao', 30, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
@@ -280,24 +247,11 @@ VALUES ('Risoto com queijo brie', 'Arroz', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Risoto com queijo brie', 'Queijo brie', 4, 'un');
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:dados.sql
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Veggie cheeseburger', 'Pao', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-<<<<<<< HEAD:inserts.sql
-VALUES ('Veggie cheeseburger', 'Queijo vegano', 100, 'g');
-
-INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Veggie cheeseburger', 'Hamburguer vegano', 160, 'g');
-
-INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Pudim de leite condensado', 'Leite Condensado', 375, 'g');
-
-INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Pudim de leite condensado', 'Acucar', 45, 'g');
-=======
 VALUES ('Veggie cheeseburger', 'Queijo vegano', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
@@ -308,38 +262,21 @@ VALUES ('Pudim de leite condensado', 'Leite Condensado', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Pudim de leite condensado', 'Acucar', 1, 'un');
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:dados.sql
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Pudim de leite condensado', 'Ovo', 2, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-<<<<<<< HEAD:inserts.sql
-VALUES ('Pudim de leite condensado', 'Leite', 400, 'ml');
-
-INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Merengue de morango', 'Leite', 500, 'ml');
-=======
 VALUES ('Pudim de leite condensado', 'Leite', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Merengue de morango', 'Leite', 1, 'un');
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:dados.sql
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Merengue de morango', 'Suspiro', 15, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-<<<<<<< HEAD:inserts.sql
-VALUES ('Merengue de morango', 'Acucar', 35, 'g');
-
-INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
-VALUES ('Merengue de morango', 'Morango', 200, 'g');
-
-
-=======
 VALUES ('Merengue de morango', 'Acucar', 1, 'un');
 
 INSERT INTO ingrediente_prato(nome_item, nome_ingrediente, quantidade, unidade_medida)
 VALUES ('Merengue de morango', 'Morango', 10, 'un');
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:dados.sql

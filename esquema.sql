@@ -58,10 +58,6 @@ CREATE TABLE ingrediente_prato(
     nome_ingrediente varchar(50) references ingrediente(nome) not null,
     quantidade int not null,
     unidade_medida varchar(10) not null,
-<<<<<<< HEAD:script_criacao.sql
     
-=======
-
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:esquema.sql
     constraint pk_ingredprato primary key (nome_item, nome_ingrediente) 
 );
