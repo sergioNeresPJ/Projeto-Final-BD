@@ -10,10 +10,6 @@ INNER JOIN ingrediente_prato i ON p.nome_item = i.nome_item
 WHERE nome_ingrediente = 'Ovo';
 
 -- Consulta 4
-SELECT avg(preco) AS "media de preco das entradas" FROM item_cardapio 
-INNER JOIN prato ON nome = nome_item WHERE tipo_prato = 'entrada';
-
--- Consulta 5
 SELECT nome_ingrediente, max(quant) 
 FROM (
     SELECT nome_ingrediente, count(*) as quant 
@@ -29,13 +25,13 @@ WHERE quant = (
 ) 
 GROUP BY nome_ingrediente;
 
--- Consulta 6
+-- Consulta 5
 SELECT nome FROM funcionario 
 INNER JOIN prepara_pedido ON cpf = cpf_funcionario
 INNER JOIN pedido ON id = id_pedido
 WHERE total = (SELECT max(total) FROM pedido);
 
--- Consulta 7
+-- Consulta 6
 SELECT tipo_prato, count(*) quant FROM pedido_item NATURAL JOIN prato
 GROUP BY tipo_prato
 ORDER BY quant DESC
