@@ -54,7 +54,7 @@ CREATE TABLE ingrediente(
 );
 
 CREATE TABLE ingrediente_prato(
-    nome_item varchar(50) references item_cardapio(nome) not null,
+    nome_item varchar(50) references prato(nome_item) not null,
     nome_ingrediente varchar(50) references ingrediente(nome) not null,
     quantidade int not null,
     unidade_medida varchar(10) not null,
