@@ -55,3 +55,26 @@ CREATE TRIGGER update_igrediente
 BEFORE INSERT OR UPDATE ON igrediente_prato
 FOR EACH ROW
 EXECUTE PROCEDURE update_qtd_igrediente();
+
+
+
+CREATE FUNCTION atualiza_total_pedido()
+RETURNS TRIGGER AS $$
+DECLARE
+	valor int;
+BEGIN
+	SELECT preco FROM item_cardapio WHERE new.nome_item = nome INTO valor;
+
+	IF(TG_OP = 'INSERT') THEN
+		UPDATE pedido SET total = total + valor where id = new.id_pedido;
+	ELSIF (TG_OP = 'DELETE') THEN
+		UPDATE pedido SET total = total - valor where id = new.id_pedido;
+	END IF;
+	RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER total_pedido
+AFTER DELETE OR INSERT ON pedido_item
+FOR EACH ROW
+EXECUTE PROCEDURE atualiza_total_pedido();
