@@ -30,3 +30,14 @@ WHERE quant = (
 GROUP BY nome_ingrediente;
 
 -- Consulta 6
+SELECT nome FROM funcionario 
+INNER JOIN prepara_pedido ON cpf = cpf_funcionario
+INNER JOIN pedido ON id = id_pedido
+ORDER BY total desc
+limit 3;
+
+-- Consulta 7
+SELECT tipo_prato, count(*) quant FROM pedido_item NATURAL JOIN prato
+GROUP BY tipo_prato
+ORDER BY quant DESC
+LIMIT 1;
