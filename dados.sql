@@ -29,7 +29,7 @@ INSERT INTO pedido(total, forma_pgto)
 VALUES (102.80, 'pix');
 
 INSERT INTO pedido(total, forma_pgto)
-VALUES (68.60, 'cartao');
+VALUES (101.50, 'cartao');
 
 -- Insercao na tabela prepara_pedido
 
