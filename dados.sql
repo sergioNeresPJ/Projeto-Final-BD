@@ -1,7 +1,3 @@
-<<<<<<< HEAD:inserts.sql
-=======
-
->>>>>>> 0bdde8abc5e04b4da584e975ae941f0be8469ab4:dados.sql
 -- Insercao na tabela funcionario
 INSERT INTO funcionario(cpf, nome, salario, data_contrato)
 VALUES ('88288702066', 'Sergio Neres', 8500, '2022-08-29');

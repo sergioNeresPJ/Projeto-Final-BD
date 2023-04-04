@@ -79,13 +79,13 @@ AFTER DELETE OR INSERT ON pedido_item
 FOR EACH ROW
 EXECUTE PROCEDURE atualiza_total_pedido();
 
-CREATE FUNCTION verifica_item_ativo()
+CREATE OR REPLACE FUNCTION verifica_item_ativo()
 RETURNS TRIGGER AS $$
 DECLARE
-	ativo boolean;
+	temp boolean;
 BEGIN
-	SELECT ativo FROM item_cardapio WHERE nome = new.nome_item INTO ativo;
-	IF(ativo != true) THEN
+	SELECT ativo FROM item_cardapio WHERE nome = new.nome_item INTO temp;
+	IF(temp != true) THEN
 		RAISE EXCEPTION 'Impossivel adicionar esse item ao pedido pois ele não está ativo no cardápio';
 	END IF;
 	RETURN NEW;

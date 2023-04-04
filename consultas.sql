@@ -33,8 +33,7 @@ GROUP BY nome_ingrediente;
 SELECT nome FROM funcionario 
 INNER JOIN prepara_pedido ON cpf = cpf_funcionario
 INNER JOIN pedido ON id = id_pedido
-ORDER BY total desc
-limit 3;
+WHERE total = (SELECT max(total) FROM pedido);
 
 -- Consulta 7
 SELECT tipo_prato, count(*) quant FROM pedido_item NATURAL JOIN prato
