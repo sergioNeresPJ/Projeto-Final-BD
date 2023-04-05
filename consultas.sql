@@ -11,13 +11,15 @@ SELECT avg(preco) AS "media de preco das entradas" FROM item_cardapio
 INNER JOIN prato ON nome = nome_item WHERE tipo_prato = 'entrada';
 
 -- Consulta 4 (Qual(is) o(s) ingrediente(s) que é(são) mais utilizado(s) para compor os pratos?)
-SELECT nome_ingrediente, max(quant) 
-FROM (
+SELECT nome_ingrediente, max(quant)
+FROM ( 
+    -- Seleciona todos os ingredientes que aparecem nos pratos e a quantidade respectiva.
     SELECT nome_ingrediente, count(*) as quant 
     FROM ingrediente_prato 
     GROUP BY nome_ingrediente
 ) t1
-WHERE quant = (
+WHERE quant = ( -- Filtra para exibir apenas os ingredientes que aparecem a quantidade maxima. 
+    -- Conta qual o ingrediente que mais aparece.
     SELECT count(*) as quant 
     FROM ingrediente_prato 
     GROUP BY nome_ingrediente
@@ -34,10 +36,11 @@ WHERE total = (SELECT max(total) FROM pedido)
 
 -- Consulta 6 (Qual o tipo de prato mais vendido no restaurante?)
 SELECT tipo_prato FROM pedido_item
-NATURAL JOIN prato 
+NATURAL JOIN prato
 GROUP BY tipo_prato
 HAVING COUNT(*) = (
-	SELECT MAX(qtd) FROM (
+	SELECT MAX(qtd) FROM ( -- Pega a quantidade mais pedida.
+		-- Seleciona a quantidade que cada tipo_prato foi pedido.
 		SELECT count(*) qtd FROM pedido_item 
 		NATURAL JOIN prato
 		GROUP BY tipo_prato
